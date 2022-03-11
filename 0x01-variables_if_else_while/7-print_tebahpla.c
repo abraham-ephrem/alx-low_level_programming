@@ -6,7 +6,7 @@
  */
 int main(void)
 {
-	int char_array[] = "\nabcdefghijklmnopqrstuvwxyz";
+	char char_array[] = "\nabcdefghijklmnopqrstuvwxyz";
 	int i;
 
 	for (i = 27; i >= 0; i--)
