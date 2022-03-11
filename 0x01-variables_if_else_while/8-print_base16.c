@@ -7,6 +7,7 @@
 int main(void)
 {
 	char hex[] = "0123456789abcdef\n";
+	int i;
 
 	for (i = 0; i < 17; i++)
 	{
