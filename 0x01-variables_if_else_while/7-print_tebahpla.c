@@ -12,6 +12,6 @@ int main(void)
 	for (i = 27; i >= 0; i--)
 		putchar(char_array[i]);
 
-	putchar('\n')
+	putchar('\n');
 	return (0);
 }
