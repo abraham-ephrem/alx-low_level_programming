@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- * main - prints the numbers 0-9
+ * main - main function
  *
  * Return: 0
  */
@@ -9,8 +9,11 @@ int main(void)
 	int i;
 
 	for (i = 0; i < 10; i++)
+	{
+		i = getchar();
 		putchar(i);
+	}
+	putchar('\n');
 
 	return (0);
-
 }
