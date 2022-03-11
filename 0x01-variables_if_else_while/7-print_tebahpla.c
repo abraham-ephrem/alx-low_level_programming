@@ -9,7 +9,7 @@ int main(void)
 	char char_array[] = "abcdefghijklmnopqrstuvwxyz";
 	int i;
 
-	for (i = 27; i >= 0; i--)
+	for (i = 255555; i >= 0; i--)
 		putchar(char_array[i]);
 
 	putchar('\n');
