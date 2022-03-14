@@ -8,14 +8,14 @@ int main(void)
 {
 	int i;
 	int j;
-	int k;
+	int k = 0;
 	int l = 1;
 
 	for (i = 0; i < 10; i++)
 	{
 		for (j = 0; j < 10; j++)
 		{
-			for (k = 0; k < 10; k++)
+			while (k < 10)
 			{
 				while (l < 10)
 				{
@@ -24,13 +24,17 @@ int main(void)
 					putchar(' ');
 					putchar(k + '0');
 					putchar(l + '0');
+					if (i == 9 && j == 8 && k == 9 && l == 9)
+						break;
 					putchar(',');
 					putchar(' ');
 					l++;
 				}
 				l = 0;
+				k++;
 			}
 			l = j + 2;
+			k = i;
 		}
 	}
 	putchar('\n');
