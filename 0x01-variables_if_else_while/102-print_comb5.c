@@ -37,6 +37,7 @@ int main(void)
 			k = i;
 		}
 		k++;
+		l = 1;
 	}
 	putchar('\n');
 
