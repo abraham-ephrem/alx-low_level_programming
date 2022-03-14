@@ -36,6 +36,7 @@ int main(void)
 			l = j + 2;
 			k = i;
 		}
+		k++;
 	}
 	putchar('\n');
 
