@@ -10,6 +10,16 @@
  * On error, -1 is returned, and errno is set appropriately.
  */
 int _putchar(char c);
-
+/**
+ * print_alphabet - writes small letters
+ *
+ * Return: void
+ */
 void print_alphabet(void);
+/**
+ * print_alphabet_x10 - print small letters 10 times
+ *
+ * Return: void
+ */
+void print_alphabet_x10(void);
 #endif
