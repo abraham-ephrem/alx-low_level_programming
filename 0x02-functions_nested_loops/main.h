@@ -29,4 +29,5 @@ void print_alphabet_x10(void);
  * Return: 1 if the letter is a small letter or 0 otherwise
  */
 int _islower(int c);
+int _isalpha(int c);
 #endif
