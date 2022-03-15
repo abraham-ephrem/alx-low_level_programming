@@ -15,7 +15,7 @@ int main(void)
  *
  * Return: void
  */
-void print_alphabet(void)
+print_alphabet()
 {
 	int i;
 
