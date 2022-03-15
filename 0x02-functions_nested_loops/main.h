@@ -22,4 +22,11 @@ void print_alphabet(void);
  * Return: void
  */
 void print_alphabet_x10(void);
+/**
+ * _islower - checks for small letters
+ * @c: The letter to be checked
+ *
+ * Return: 1 if the letter is a small letter or 0 otherwise
+ */
+int _islower(int c);
 #endif
