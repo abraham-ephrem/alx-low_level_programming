@@ -4,7 +4,7 @@
  *
  * Return: 0
  */
-int main()
+int main(void)
 {
 	print_alphabet();
 	return (0);
@@ -15,7 +15,7 @@ int main()
  *
  * Return: 0
  */
-void print_alphabet(void)
+void print_alphabet()
 {
 	int i;
 
