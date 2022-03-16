@@ -20,7 +20,7 @@ int main(void)
 		else
 			printf("%lu, ", (current_fib));
 		n1 = n2;
-		n2 = curret_fib;
+		n2 = current_fib;
 	}
 
 	return (0);
