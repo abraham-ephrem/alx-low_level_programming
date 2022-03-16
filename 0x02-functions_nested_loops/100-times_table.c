@@ -37,7 +37,7 @@ void print_time_table(int n)
 				if (j == 0)
 					_putchar(result + '0');
 				else if (result < 10)
-					print_results_less_than_10(result);
+					print_result_less_than_10(result);
 				else if (result >= 10 && result < 100)
 				{
 					_putchar(',');
