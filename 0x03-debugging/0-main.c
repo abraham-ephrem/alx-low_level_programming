@@ -8,7 +8,7 @@
  */
 int main(void)
 {
-	int num;
+	int num = 0;
 
 	positive_or_negative(num);
 
