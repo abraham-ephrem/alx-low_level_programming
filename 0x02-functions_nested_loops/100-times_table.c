@@ -19,7 +19,7 @@ void print_result_less_than_10(int result)
  *
  * Return: void
  */
-void print_time_table(int n)
+void print_times_table(int n)
 {
 	int i;
 	int j;
