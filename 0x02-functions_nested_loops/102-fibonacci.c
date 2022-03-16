@@ -6,16 +6,16 @@
  */
 int main(void)
 {
-	long long n1 = 1;
-	long long n2 = 2;
-	long long current_fib;
+	unsigned long long n1 = 1;
+	unsigned long long n2 = 2;
+	unsigned long long current_fib;
 	int i;
 
-	printf("%lld, %lld, ", n1, n2);
+	printf("%llu, %llu, ", n1, n2);
 	for (i = 1; i <= 48; i++)
 	{
 		current_fib = n1 + n2;
-		printf("%lld, ", (current_fib));
+		printf("%llu, ", (current_fib));
 		n1 = n2;
 		n2 = current_fib;
 	}
