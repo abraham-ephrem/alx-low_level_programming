@@ -18,11 +18,9 @@ int main(void)
 		if (i == 48)
 			printf("%lu", current_fib);
 		else
-		{
 			printf("%lu, ", (current_fib));
-			n1 = n2;
-			n2 = current_fib;
-		}
+		n1 = n2;
+		n2 = curret_fib;
 	}
 
 	return (0);
