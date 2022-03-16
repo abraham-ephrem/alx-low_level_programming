@@ -22,6 +22,7 @@ int main(void)
 		n1 = n2;
 		n2 = current_fib;
 	}
+	printf("\n");
 
 	return (0);
 }
