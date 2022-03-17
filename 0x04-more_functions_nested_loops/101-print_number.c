@@ -5,7 +5,7 @@
  * @n: the integer
  * Return: 0
  */
-void print_numbers_100000(int n)
+void print_numbers_100000(int num)
 {
 	_putchar((num / 100000) + '0');
 	_putchar((num / 10000 % 10) + '0');
@@ -19,7 +19,7 @@ void print_numbers_100000(int n)
  * @n: the number
  * Return: void
  */
-void print_numbers_1000000(int n)
+void print_numbers_1000000(int num)
 {
 	_putchar((num / 1000000) + '0');
 	_putchar((num / 100000 % 10) + '0');
