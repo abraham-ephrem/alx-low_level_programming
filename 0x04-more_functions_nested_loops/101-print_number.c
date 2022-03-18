@@ -2,7 +2,7 @@
 #include <stdlib.h>
 /**
  * print_numbers_100000 - prints an integer
- * @n: the integer
+ * @num: the integer
  * Return: 0
  */
 void print_numbers_100000(int num)
@@ -16,7 +16,7 @@ void print_numbers_100000(int num)
 }
 /**
  * print_numbers_1000000 - prints numbers
- * @n: the number
+ * @num: the number
  * Return: void
  */
 void print_numbers_1000000(int num)
