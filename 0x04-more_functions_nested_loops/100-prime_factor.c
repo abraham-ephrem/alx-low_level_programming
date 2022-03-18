@@ -5,7 +5,7 @@
  */
 int main(void)
 {
-	int num;
+	long num;
 	int max_factor;
 	int i;
 
