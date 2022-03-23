@@ -23,7 +23,7 @@ char *cap_string(char *str)
 		{
 			if (i == 0 && isalpha(str[i] != 0))
 				*(str + i) = toupper(*(tmp + i));
-			if (str[i] == separators[j])
+			else if (str[i] == separators[j])
 				*(str + (i + 1)) = toupper(*(tmp + (i + 1)));
 		}
 	}
