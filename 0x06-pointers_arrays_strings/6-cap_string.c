@@ -13,13 +13,13 @@ char *cap_string(char *str)
 	int j;
 	int length = strlen(str);
 	char tmp[3000];
-	char separators[] = {' ', '\t', '\n', ',', ';', '.', '!', '?', '"',
+	char separators[] = {' ', '\t', '\v', '\n', ',', ';', '.', '!', '?', '"',
 		'(', ')', '{', '}'};
 
 	strcpy(tmp, str);
 	for (i = 0; i < length; i++)
 	{
-		for (j = 0; j < 13; j++)
+		for (j = 0; j < 14; j++)
 		{
 			if (str[i] == separators[j])
 				*(str + (i + 1)) = toupper(*(tmp + (i + 1)));
