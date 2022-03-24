@@ -9,12 +9,13 @@
 char *rot13(char *str)
 {
 	int i = 0;
-	
+
 	while (str[i] != '\0')
 	{
 		while (isalpha(str[i]) != 0)
 		{
-			if ((str[i] >= 'a' && str[i] <= 'm') || (str[i] >= 'A' && str[i] <= 'M'))
+			if ((str[i] >= 'a' && str[i] <= 'm')
+				|| (str[i] >= 'A' && str[i] <= 'M'))
 				str[i] += 13;
 			else
 				str[i] -= 13;
