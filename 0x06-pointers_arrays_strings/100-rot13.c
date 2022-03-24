@@ -8,10 +8,9 @@
  */
 char *rot13(char *str)
 {
-	int i;
-	int length = strlen(str);
-
-	for (i = 0; i < length; i++)
+	int i = 0;
+	
+	while (str[i] != '\0')
 	{
 		while (isalpha(str[i]) != 0)
 		{
@@ -21,6 +20,7 @@ char *rot13(char *str)
 				str[i] -= 13;
 			i++;
 		}
+		i++;
 	}
 	return (str);
 }
