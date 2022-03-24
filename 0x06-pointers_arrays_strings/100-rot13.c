@@ -8,19 +8,22 @@
  */
 char *rot13(char *str)
 {
-	int i = 0;
+	int i;
+	int length = strlen(str);
 
-	while (str[i] != '\0')
+	for (i = 0; i < length; i++)
 	{
-		while ((str[i] >= 'a' && str[i] <= 'z') ||
-			(str[i] >= 'A' && str[i] <= 'Z'))
+		while (isalpha(str[i]) != 0)
 		{
 			if ((str[i] >= 'a' && str[i] <= 'm')
 				|| (str[i] >= 'A' && str[i] <= 'M'))
+			{
 				str[i] += 13;
+				break;
+			}
+			str[i] -= 13;
 			i++;
 		}
-		i++;
 	}
 	return (str);
 }
