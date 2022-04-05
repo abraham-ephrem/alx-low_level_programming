@@ -33,7 +33,7 @@ char *argstostr(int ac, char **av)
 
 	if (ac == 0 || av == NULL)
 		return (NULL);
-	size = strlength(ac, av) + ac;
+	size = strlength(ac, av) + ac + 1;
 	str = malloc(sizeof(char) * (unsigned int)size);
 	if (str == NULL)
 		return (NULL);
