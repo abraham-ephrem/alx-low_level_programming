@@ -1,5 +1,7 @@
 #include "dog.h"
 #include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
 /**
  * print_dog - prints the contents of the struct dog
  * @d: a pointer to a dog struct
@@ -7,18 +9,34 @@
  */
 void print_dog(struct dog *d)
 {
+	char *name;
+	char *owner;
+
 	if (d == NULL)
 		printf(" ");
-	if (d->name != NULL)
-		printf("Name: %s\n", d->name);
 	else
-		printf("Name :(nil)\n");
-	if (d->age != 0)
-		printf("Age: %f\n", d->age);
-	else
-		printf("Age :(nil)\n");
-	if (d->owner != NULL)
-		printf("Owner: %s\n", d->owner);
-	else
-		printf("Owner :(nil)\n");
+	{
+		name = malloc(sizeof(d->name));
+		if (name == NULL)
+			printf("Name: (nil)\n");
+		else
+		{
+			strcpy(name, d->name);
+			printf("Name: %s\n", name);
+		}
+		if (d->age != 0)
+			printf("Age: %f\n", d->age);
+		else
+			printf("Age :(nil)\n");
+		owner = malloc(sizeof(d->owner));
+		if (owner == NULL)
+			printf("Owner: (nil)\n");
+		else
+		{
+			strcpy(owner, d->owner);
+			printf("Owner: %s\n", owner);
+		}
+		free(name);
+		free(owner);
+	}
 }
